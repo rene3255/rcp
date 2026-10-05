@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#063b63">
+<meta name="description" content="Red Cunícola del Pacífico (RCP): comunidad de aprendizaje, colaboración y vinculación para impulsar la cunicultura.">
+<meta property="og:title" content="Red Cunícola del Pacífico | RCP">
+<meta property="og:description" content="Conocer · Compartir · Crecer. Comunidad cunícola del Pacífico.">
+<meta property="og:type" content="website">
+<title>Red Cunícola del Pacífico | RCP</title>
+<style>
+:root{--navy:#063b63;--blue:#0877b9;--green:#159447;--lime:#6cc04a;--ink:#123047;--muted:#617486;--bg:#f4f8fa;--white:#fff;--line:#dbe7ed}
+*{box-sizing:border-box} html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:var(--bg);line-height:1.55}
+a{text-decoration:none;color:inherit}
+.nav{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.navin{max-width:1180px;margin:auto;padding:13px 22px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:11px;font-weight:900;color:var(--navy)}
+.brandmark{width:42px;height:42px;border-radius:13px;background:linear-gradient(145deg,var(--blue),var(--green));display:grid;place-items:center;color:white;font-size:22px;box-shadow:0 7px 18px #063b6322}
+.navlinks{display:flex;gap:20px;font-size:14px;font-weight:700;color:#496274}
+.navlinks a:hover{color:var(--green)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border:0;border-radius:13px;padding:13px 18px;font-weight:850;cursor:pointer;transition:.2s;box-shadow:0 8px 20px #063b6320}
+.btn:hover{transform:translateY(-2px)}
+.btn-primary{background:linear-gradient(135deg,var(--navy),var(--blue));color:#fff}
+.btn-green{background:linear-gradient(135deg,#11813e,var(--green));color:#fff}
+.btn-light{background:#fff;color:var(--navy);border:1px solid var(--line)}
+.hero{background:radial-gradient(circle at 80% 15%,#6cc04a33,transparent 30%),linear-gradient(135deg,#eef8fc,#fff);padding:68px 22px 58px;border-bottom:1px solid var(--line)}
+.heroin{max-width:1180px;margin:auto;display:grid;grid-template-columns:1.12fr .88fr;align-items:center;gap:48px}
+.eyebrow{display:inline-flex;gap:8px;align-items:center;padding:7px 11px;border-radius:999px;background:#e5f4ea;color:#14753b;font-size:12px;font-weight:900;letter-spacing:.07em;text-transform:uppercase}
+h1{font-size:clamp(42px,6vw,72px);line-height:.98;margin:18px 0 18px;letter-spacing:-.045em;color:var(--navy)}
+.grad{background:linear-gradient(90deg,var(--blue),var(--green));-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{font-size:20px;color:#536b7a;max-width:670px}
+.ctas{display:flex;gap:12px;flex-wrap:wrap;margin:26px 0}
+.eventmini{display:flex;gap:16px;align-items:center;margin-top:28px;padding:17px 18px;border-radius:18px;background:#fff;border:1px solid var(--line);box-shadow:0 15px 40px #063b6310;max-width:610px}
+.eventicon{font-size:28px}.eventmini strong{color:var(--navy)}.eventmini small{display:block;color:var(--muted)}
+.poster{background:#fff;padding:10px;border-radius:26px;box-shadow:0 25px 60px #063b6320;border:1px solid var(--line);transform:rotate(1deg)}
+.poster img{display:block;width:100%;height:auto;border-radius:18px}
+.section{padding:76px 22px}.sectionin{max-width:1180px;margin:auto}
+.sectionhead{max-width:760px;margin-bottom:34px}.kicker{color:var(--green);font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:.1em}
+h2{font-size:clamp(31px,4vw,46px);line-height:1.08;color:var(--navy);margin:9px 0 12px;letter-spacing:-.03em}
+.sectionhead p{color:var(--muted);font-size:18px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:25px;box-shadow:0 10px 28px #063b6308}
+.card .ico{font-size:30px}.card h3{margin:12px 0 7px;color:var(--navy)}.card p{color:var(--muted);margin:0}
+.audience{display:grid;grid-template-columns:1fr 1fr;gap:18px}.pillbox{background:#fff;border:1px solid var(--line);border-radius:22px;padding:25px}.pills{display:flex;flex-wrap:wrap;gap:9px;margin-top:17px}.pill{padding:9px 12px;border-radius:999px;background:#eef7fb;color:var(--navy);font-weight:750;font-size:14px}
+.meeting{background:linear-gradient(135deg,#063b63,#0877b9);color:#fff}.meeting h2{color:#fff}.meeting .sectionhead p{color:#d8edf8}
+.meetinggrid{display:grid;grid-template-columns:1.1fr .9fr;gap:24px;align-items:stretch}
+.eventcard{background:#ffffff12;border:1px solid #ffffff25;border-radius:24px;padding:28px}
+.bigdate{font-size:31px;font-weight:900;line-height:1.1}.time{font-size:21px;margin-top:9px;color:#dff6e8}.facts{display:grid;gap:13px;margin-top:25px}.fact{display:flex;gap:12px;align-items:flex-start}.fact b{display:block}.fact span{color:#d5e7ef;font-size:14px}
+.countdown{display:grid;grid-template-columns:repeat(4,1fr);gap:9px;margin-top:23px}.counter{background:#fff;color:var(--navy);border-radius:14px;text-align:center;padding:13px 7px}.counter b{font-size:26px;display:block}.counter small{color:var(--muted)}
+.topics{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.topic{background:#fff;border:1px solid var(--line);border-radius:18px;padding:20px;text-align:center}.topic span{font-size:29px}.topic strong{display:block;margin-top:9px;color:var(--navy)}
+.register{display:grid;grid-template-columns:.9fr 1.1fr;gap:28px;align-items:start}.form{background:#fff;border:1px solid var(--line);border-radius:24px;padding:28px;box-shadow:0 15px 35px #063b6309}
+label{font-size:13px;font-weight:800;color:var(--navy);display:block;margin:0 0 6px}input,select{width:100%;border:1px solid #cddce4;border-radius:12px;padding:12px 13px;font:inherit;margin-bottom:15px;background:#fff}input:focus,select:focus{outline:3px solid #0877b922;border-color:var(--blue)}
+.notice{background:#edf8f1;border:1px solid #ccebd6;border-radius:15px;padding:14px;color:#1d6839;font-size:14px;margin-bottom:18px}
+.socials{display:grid;gap:12px}.social{background:#fff;border:1px solid var(--line);border-radius:17px;padding:18px;display:flex;align-items:center;justify-content:space-between}.social b{color:var(--navy)}.social small{display:block;color:var(--muted)}
+.footer{background:#062e4d;color:#dbeaf2;padding:42px 22px}.footerin{max-width:1180px;margin:auto;display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap}.footer strong{color:#fff}.footnote{color:#9bb7c7;font-size:13px;margin-top:8px}.contact{font-size:20px;font-weight:900;color:#fff}
+@media(max-width:900px){.heroin,.meetinggrid,.register{grid-template-columns:1fr}.poster{max-width:580px;margin:auto}.cards{grid-template-columns:1fr 1fr}.topics{grid-template-columns:1fr 1fr}.navlinks{display:none}}
+@media(max-width:600px){.hero{padding-top:45px}.cards,.audience{grid-template-columns:1fr}.section{padding:58px 18px}.countdown{grid-template-columns:repeat(2,1fr)}h1{font-size:48px}.lead{font-size:18px}.eventmini{align-items:flex-start}}
+</style>
+</head>
+<body>
+<nav class="nav"><div class="navin">
+<a class="brand" href="#inicio"><span class="brandmark">🐇</span><span>Red Cunícola del Pacífico<br><small style="font-weight:700;color:#159447">RCP</small></span></a>
+<div class="navlinks"><a href="#comunidad">Comunidad</a><a href="#reunion">Reunión</a><a href="#temas">Temas</a><a href="#registro">Registro</a></div>
+<a class="btn btn-green" href="#registro">Únete a la RCP</a>
+</div></nav>
+
+<header id="inicio" class="hero"><div class="heroin">
+<div>
+<span class="eyebrow">🐇 Comunidad cunícola · Pacífico mexicano</span>
+<h1>Conocer.<br><span class="grad">Compartir.</span><br>Crecer.</h1>
+<p class="lead">La <strong>Red Cunícola del Pacífico (RCP)</strong> es un espacio para reunir a quienes producen, crían, estudian, investigan o simplemente quieren aprender sobre cunicultura.</p>
+<div class="ctas"><a class="btn btn-primary" href="#reunion">Ver primera reunión →</a><a class="btn btn-light" href="#registro">Quiero participar</a></div>
+<div class="eventmini"><div class="eventicon">📅</div><div><strong>Primera reunión virtual · 4 de noviembre de 2026</strong><small>20:00 h · Tiempo del centro de México (CDMX)</small></div></div>
+</div>
+<div class="poster"><img src="assets/flyer-rcp.png" alt="Flyer de la Red Cunícola del Pacífico"></div>
+</div></header>
+
+<section id="comunidad" class="section"><div class="sectionin">
+<div class="sectionhead"><span class="kicker">La comunidad</span><h2>Una red para aprender y conectar.</h2><p>La RCP busca crear vínculos entre personas y organizaciones para compartir conocimientos, experiencias y oportunidades alrededor de la cunicultura.</p></div>
+<div class="cards">
+<div class="card"><div class="ico">🎓</div><h3>Aprendizaje</h3><p>Charlas y encuentros con especialistas y personas con experiencia práctica.</p></div>
+<div class="card"><div class="ico">🤝</div><h3>Colaboración</h3><p>Conecta productores, estudiantes, profesionales, emprendedores y aliados del sector.</p></div>
+<div class="card"><div class="ico">🚀</div><h3>Impulso</h3><p>Comparte buenas prácticas, innovación, oportunidades y experiencias que ayuden a crecer.</p></div>
+</div>
+</div></section>
+
+<section class="section" style="padding-top:0"><div class="sectionin"><div class="audience">
+<div class="pillbox"><span class="kicker">¿Quiénes son bienvenidos?</span><h2 style="font-size:30px">La RCP es para ti si...</h2><div class="pills"><span class="pill">🐇 Cunicultores</span><span class="pill">🌱 Criadores</span><span class="pill">🎓 Estudiantes</span><span class="pill">🩺 MVZ y profesionales</span><span class="pill">🔬 Investigadores</span><span class="pill">💼 Emprendedores</span><span class="pill">🏢 Empresas</span><span class="pill">❤️ Personas interesadas</span></div></div>
+<div class="pillbox"><span class="kicker">Visión</span><h2 style="font-size:30px">Una cunicultura más conectada.</h2><p style="color:var(--muted)">La RCP nace como una iniciativa abierta para generar conversación, conocimiento y colaboración. Comenzamos con reuniones virtuales y podemos crecer hacia una red permanente de recursos, eventos y contactos.</p><a class="btn btn-green" href="#registro">Formar parte de la red</a></div>
+</div></div></section>
+
+<section id="reunion" class="section meeting"><div class="sectionin">
+<div class="sectionhead"><span class="kicker" style="color:#9ee5b5">Evento de lanzamiento</span><h2>Primera reunión virtual de la RCP</h2><p>Reserva la fecha y participa en el inicio de esta comunidad.</p></div>
+<div class="meetinggrid">
+<div class="eventcard"><div class="bigdate">Miércoles<br>4 de noviembre de 2026</div><div class="time">🕗 20:00 horas · Tiempo del centro de México (CDMX)</div>
+<div class="facts"><div class="fact">💻 <div><b>Formato</b><span>Reunión virtual</span></div></div><div class="fact">📺 <div><b>Transmisión</b><span>En vivo por YouTube y Facebook</span></div></div><div class="fact">🎙️ <div><b>Contenido</b><span>Conversación, aprendizaje, experiencias y vinculación cunícola</span></div></div></div>
+<div class="countdown"><div class="counter"><b id="days">--</b><small>días</small></div><div class="counter"><b id="hours">--</b><small>horas</small></div><div class="counter"><b id="mins">--</b><small>minutos</small></div><div class="counter"><b id="secs">--</b><small>segundos</small></div></div>
+</div>
+<div class="eventcard"><h3 style="font-size:25px;margin-top:0">¿Qué encontrarás?</h3><p style="color:#d5e7ef">Un espacio para escuchar, preguntar, compartir experiencias y conocer a otras personas interesadas en el desarrollo de la cunicultura.</p><div style="margin-top:22px;display:grid;gap:10px"><div>✓ Presentaciones de ponentes</div><div>✓ Preguntas y participación</div><div>✓ Intercambio de experiencias</div><div>✓ Nuevas conexiones</div></div><a class="btn btn-green" style="margin-top:24px" href="#registro">Registrarme</a></div>
+</div></div></section>
+
+<section id="temas" class="section"><div class="sectionin">
+<div class="sectionhead"><span class="kicker">Agenda temática</span><h2>Temas para construir conocimiento.</h2><p>La programación podrá crecer según los intereses de la comunidad.</p></div>
+<div class="topics"><div class="topic"><span>🐇</span><strong>Producción y manejo</strong></div><div class="topic"><span>🌾</span><strong>Nutrición</strong></div><div class="topic"><span>🧬</span><strong>Genética y mejora</strong></div><div class="topic"><span>🩺</span><strong>Sanidad</strong></div><div class="topic"><span>📈</span><strong>Mercado y comercialización</strong></div><div class="topic"><span>🥩</span><strong>Valor agregado</strong></div><div class="topic"><span>💡</span><strong>Innovación y tecnología</strong></div><div class="topic"><span>🤝</span><strong>Vinculación y alianzas</strong></div></div>
+</div></section>
+
+<section id="registro" class="section" style="padding-top:25px"><div class="sectionin">
+<div class="register">
+<div><span class="kicker">Participa</span><h2>Quiero ser parte de la RCP.</h2><p style="font-size:18px;color:var(--muted)">Déjanos tus datos y te ayudaremos a mantenerte en contacto con la comunidad y sus próximas actividades.</p><div class="notice">📱 <strong>Contacto:</strong> 312 197 7601<br>El botón de registro abre WhatsApp con tus datos preparados para enviar.</div>
+<div class="socials"><a class="social" href="https://www.youtube.com/" target="_blank" rel="noopener"><div><b>▶ YouTube</b><small>Canal de transmisiones</small></div><span>↗</span></a><a class="social" href="https://www.facebook.com/" target="_blank" rel="noopener"><div><b>f Facebook</b><small>Página y comunidad</small></div><span>↗</span></a></div></div>
+<form class="form" onsubmit="registerWhatsApp(event)">
+<h3 style="margin-top:0;color:var(--navy);font-size:24px">Registro de interés</h3>
+<label for="name">Nombre</label><input id="name" required placeholder="Tu nombre">
+<label for="city">Ciudad / Estado</label><input id="city" placeholder="Ej. Colima, Colima">
+<label for="profile">¿Cómo participas?</label><select id="profile"><option>Cunicultor/a</option><option>Criador/a</option><option>Estudiante</option><option>MVZ / profesional</option><option>Investigador/a</option><option>Emprendedor/a</option><option>Persona interesada en aprender</option><option>Empresa / organización</option></select>
+<label for="interest">¿Qué te interesa aprender o compartir?</label><input id="interest" placeholder="Producción, nutrición, genética, mercado...">
+<button class="btn btn-green" type="submit" style="width:100%">Enviar registro por WhatsApp →</button>
+</form>
+</div></div></section>
+
+<footer class="footer"><div class="footerin"><div><strong>🐇 Red Cunícola del Pacífico · RCP</strong><div class="footnote">Conocer · Compartir · Crecer</div></div><div><div class="contact">312 197 7601</div><div class="footnote">Primera reunión · 4 de noviembre de 2026 · 20:00 h CDMX</div></div></div></footer>
+
+<script>
+const eventDate = new Date("2026-11-04T20:00:00-06:00").getTime();
+function tick(){
+ const d=eventDate-Date.now();
+ if(d<=0){["days","hours","mins","secs"].forEach(x=>document.getElementById(x).textContent="0");return}
+ document.getElementById("days").textContent=Math.floor(d/86400000);
+ document.getElementById("hours").textContent=Math.floor(d/3600000)%24;
+ document.getElementById("mins").textContent=Math.floor(d/60000)%60;
+ document.getElementById("secs").textContent=Math.floor(d/1000)%60;
+}
+tick();setInterval(tick,1000);
+function registerWhatsApp(e){
+ e.preventDefault();
+ const name=document.getElementById("name").value.trim();
+ const city=document.getElementById("city").value.trim()||"No indicada";
+ const profile=document.getElementById("profile").value;
+ const interest=document.getElementById("interest").value.trim()||"Por definir";
+ const msg=`Hola, quiero formar parte de la Red Cunícola del Pacífico (RCP).%0A%0ANombre: ${encodeURIComponent(name)}%0ACiudad/Estado: ${encodeURIComponent(city)}%0APerfil: ${encodeURIComponent(profile)}%0AInterés: ${encodeURIComponent(interest)}%0A%0AQuiero participar en la primera reunión virtual del 4 de noviembre de 2026.`;
+ window.open("https://wa.me/523121977601?text="+msg,"_blank");
+}
+</script>
+</body></html>
